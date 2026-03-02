@@ -61,14 +61,14 @@ export default function Header() {
             {/* Mobile Menu */}
             {isOpen && (
                 <div className="md:hidden bg-white border-b border-gray-200 animate-in fade-in slide-in-from-top-4 duration-300 shadow-lg">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <Link href="/" className="block hover:bg-gray-50 text-gray-800 px-3 py-2 rounded-md transition-colors">Home</Link>
-                        <Link href="/epoxy-flooring" className="block hover:bg-gray-50 text-gray-800 px-3 py-2 rounded-md transition-colors">Epoxy Floors</Link>
-                        <Link href="/polished-concrete" className="block hover:bg-gray-50 text-gray-800 px-3 py-2 rounded-md transition-colors">Polished Concrete</Link>
-                        <Link href="/commercial-epoxy-flooring-orange-county" className="block hover:bg-gray-50 text-gray-800 px-3 py-2 rounded-md transition-colors">Commercial</Link>
-                        <Link href="/about-us" className="block hover:bg-gray-50 text-gray-800 px-3 py-2 rounded-md transition-colors">About Us</Link>
-                        <Link href="/photo-gallery" className="block hover:bg-gray-50 text-gray-800 px-3 py-2 rounded-md transition-colors">Photo Gallery</Link>
-                        <Link href="/epoxy-calendar" className="block bg-orange-600 text-white px-3 py-2 rounded-md font-semibold text-center mt-4">Get Free Quote</Link>
+                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                        <Link href="/" onClick={() => setIsOpen(false)} className="block hover:bg-gray-50 hover:text-orange-500 text-gray-800 px-3 py-2 rounded-md transition-colors font-medium">Home</Link>
+                        <Link href="/epoxy-flooring" onClick={() => setIsOpen(false)} className="block hover:bg-gray-50 hover:text-orange-500 text-gray-800 px-3 py-2 rounded-md transition-colors font-medium">Epoxy Floors</Link>
+                        <Link href="/polished-concrete" onClick={() => setIsOpen(false)} className="block hover:bg-gray-50 hover:text-orange-500 text-gray-800 px-3 py-2 rounded-md transition-colors font-medium">Polished Concrete</Link>
+                        <Link href="/commercial-epoxy-flooring-orange-county" onClick={() => setIsOpen(false)} className="block hover:bg-gray-50 hover:text-orange-500 text-gray-800 px-3 py-2 rounded-md transition-colors font-medium">Commercial</Link>
+                        <Link href="/about-us" onClick={() => setIsOpen(false)} className="block hover:bg-gray-50 hover:text-orange-500 text-gray-800 px-3 py-2 rounded-md transition-colors font-medium">About Us</Link>
+                        <Link href="/photo-gallery" onClick={() => setIsOpen(false)} className="block hover:bg-gray-50 hover:text-orange-500 text-gray-800 px-3 py-2 rounded-md transition-colors font-medium">Photo Gallery</Link>
+                        <Link href="/epoxy-calendar" onClick={() => setIsOpen(false)} className="block bg-orange-600 text-white px-3 py-2 rounded-md font-semibold text-center mt-4 mx-3 hover:bg-orange-700 transition-colors shadow-lg shadow-orange-900/20 shadow-sm">Get Free Quote</Link>
                     </div>
                 </div>
             )}
