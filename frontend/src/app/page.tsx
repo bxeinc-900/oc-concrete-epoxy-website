@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import ServiceCard from "@/components/ServiceCard";
 
+import ReviewWidget from "@/components/ReviewWidget";
+
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -95,6 +97,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Review Section */}
+      <ReviewWidget />
 
       {/* Buying Intent / Trust Section */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
